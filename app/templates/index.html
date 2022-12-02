@@ -113,12 +113,7 @@ function initialize()
 	})
 
 	let geometry1	= new THREE.CubeGeometry(1,1,1);
-	//let geometry1	= new THREE.CircleBufferGeometry(1,36,36);
-	let material1	= new THREE.MeshNormalMaterial({
-		transparent: true,
-		opacity: 0.5,
-		side: THREE.DoubleSide
-	}); 
+	let material1	= new THREE.MeshBasicMaterial({color:0xff0000, transparent:true, opacity:0.5}) 
 	
 	mesh1 = new THREE.Mesh( geometry1, material1 );
 	mesh1.position.y = 0.5;
